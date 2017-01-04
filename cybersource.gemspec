@@ -5,7 +5,7 @@ require 'cybersource/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "cybersource"
-  spec.version       = Cybersource::VERSION
+  spec.version       = CyberSource::VERSION
   spec.authors       = ["蒼時弦也"]
   spec.email         = ["elct9620@frost.tw"]
 
