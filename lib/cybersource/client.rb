@@ -20,7 +20,9 @@ module CyberSource
     # CyberSource API
     def authorize_credit_card(params = {}, &block)
       _body = AuthorizeCreditCard.new(**params)
+      p block_given?
       _body.instance_eval(&block) if block_given?
+      p _body.to_json
       Http.send _body
     end
   end
