@@ -4,7 +4,7 @@ module CyberSource
   class Config
     include Singleton
 
-    attr_accessor :sandbox
+    attr_accessor :sandbox, :api_key, :api_secret
 
     class << self
       def method_missing(name, *args, &block)
