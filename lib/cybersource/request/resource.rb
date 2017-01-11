@@ -40,7 +40,6 @@ module CyberSource
         hash_output = OpenSSL::HMAC.hexdigest(OpenSSL::Digest.new('sha256'), Config.api_secret, hash_input)
         "xv2:#{timestamp}:#{hash_output}"
       end
-
     end
   end
 end
